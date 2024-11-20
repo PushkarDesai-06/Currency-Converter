@@ -1,0 +1,202 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("./Assets/negative-space-abstract-soft-gradient-background.jpg");
+
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  /* padding: 1rem 0rem 1rem 0rem; */
+  margin: 0rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+
+  padding: 3rem;
+
+  position: relative;
+  left: 50vw;
+  top: 50vh;
+
+  transform: translate(-50%, -50%);
+
+  width: 25rem;
+}
+
+.glassmorph {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #838383, 0 0 20px #fff, 0 0 30px #ffffff,
+      0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #656565, 0 0 40px #5b5b5b,
+      0 0 50px #868686, 0 0 60px #737373, 0 0 70px #8c8c8c, 0 0 80px #6f6f6f;
+  }
+}
+.glow {
+  /* font-size: 80px; */
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#output {
+  height: 2.5rem;
+  width: 11rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+.fromTitle {
+  /* display: flex; */
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+}
+.toTitle {
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+option {
+  color: black;
+}
+
+select {
+  background-color: rgb(0, 157, 255);
+  border: 0px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: white;
+  height: 2rem;
+  /* glassmorphism */
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.3s;
+}
+
+select:hover {
+  scale: 102%;
+  box-shadow: 0 3px 10px 0 rgba(2, 5, 44, 0.37);
+}
+
+input {
+  background-color: rgb(0, 157, 255);
+  padding: 0.5rem;
+  border-radius: 5px;
+  height: 2.3rem;
+  width: 11rem;
+  font-size: 1rem;
+  color: white;
+
+  /* glassmorphism */
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  border: 2px solid rgb(255, 255, 255);
+  padding-left: 1rem;
+  text-align: center;
+  
+  
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.682);
+  text-align: center;
+  /* padding-left: 1rem; */
+  font-size: 0.9rem;
+
+}
+
+span {
+  /* background-color: blue; */
+
+  font-family: "Montserrat", sans-serif;
+
+  display: inline-block;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5px;
+  color: white;
+  /* width: 6rem; */
+  text-align: center;
+
+  font-size: 1.5rem;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 1rem 3rem;
+
+  transition: 0.1s;
+}
+
+button:active {
+  scale: 95%;
+  border: 2px solid white;
+}
+
+.inner {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}

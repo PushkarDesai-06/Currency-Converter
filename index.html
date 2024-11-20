@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Handlee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="glow">Currency Converter</h1>
+      <div class="fromTitle">
+        <span>From</span>
+      </div>
+      <div class="inner">
+        <select name="from" id="from">
+          <option value="INR" class="glassmorph">INR</option>
+          <option value="USD" class="glassmorph">USD</option>
+          <option value="GBP" class="glassmorph">GBP</option>
+        </select>
+
+        <input type="number" id="fromAmount" placeholder="Enter Amount Here" />
+      </div>
+
+      <!-- <div class="arrow"></div> -->
+
+      <div class="toTitle">
+        <span>To</span>
+      </div>
+      <div class="inner">
+        <select name="to" id="to">
+          <option value="INR" class="glassmorph">INR</option>
+          <option value="USD" class="glassmorph">USD</option>
+          <option value="GBP" class="glassmorph">GBP</option>
+        </select>
+        <div id="output" class="glassmorph"></div>
+      </div>
+
+      <button id="convertBtn">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
